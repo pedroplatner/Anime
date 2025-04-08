@@ -1,0 +1,102 @@
+.principal {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+
+.principal h1{
+    padding-left: 90px;
+    font-weight: 600;
+    font-size: 128px;
+}
+
+.principal p{
+    padding-left: 90px;
+    font-size: 20px;
+    width: 700px;
+}
+
+.estrela img{
+    height: 100px;
+    padding-left: 90px;
+    margin-top: -20px;
+    background: none;
+}
+
+.watch{
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    gap: 20px;
+    text-align: center;
+}
+
+.watch img{
+    width: 50px;
+    padding: 10px;
+}
+
+.play{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    border-radius: 10px;
+    background-color: royalblue;
+    font-size: 20px;
+}
+.play img{
+    background:none;
+}
+
+.play, .trailer {
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.play:hover, .trailer:hover {
+    background-color: #4169e1cc;
+}
+
+.trailer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    border-radius: 10px;
+    background-color: royalblue;
+    font-size: 20px;
+}
+
+.trailer img{
+    background:none;
+}
+
+
+.crun{
+    width: 40px;
+    margin: 20px 90px;
+}
+
+
+.carrosel-box{
+    margin-left: 20px;
+}
+
+.carousel{
+    display: flex;
+    gap: 20px;
+}
+
+.carrosel-box .carousel .carousel-item img{
+    height: 251px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.carousel-item {
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,32 @@
+.perfil img{
+    width: 40px;
+    height: 40px;
+}
+
+.name ul{
+    display: flex;
+    gap: 48px;
+    margin: 29px 69px;
+    list-style-type: none;
+}
+
+.name ul li a{
+    text-decoration: none;
+}
+
+.name ul li a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #79ADBE;
+}
+
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.perfil a img{
+    margin-right: 20px;
+    height: 28px;
+    width: 28px;
+}
