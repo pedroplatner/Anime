@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeI</title>
     <link rel="stylesheet" href="css/global.css">
+
 </head>
 <body>
     <header>
@@ -30,62 +31,76 @@
 
     <main>
         <section class="principal">
-            <h1>Solo <br>
-            Leveling</h1>
-            <p>Solo Leveling é uma história sobre um caçador que ganha poderes extraordináriose se torna um dos mais fortes do mundo.
-            A trama se passa em um mundo onde humanos com habilidades mágicas, chamados "caçadores", lutam contra monstros para proteger a humanidade. </p>
-            <div class="estrela"> <img src="/imagens/icons/avaliacao.png" alt=""></div>
+            <img class="anime-titulo" src="/imagens/titulos/titulo-solo.png" alt="Título do Anime">
+            <div class="descricao-box">
+                <p>Solo Leveling é uma história sobre um caçador que ganha poderes extraordináriose se torna um dos mais fortes do mundo.
+                A trama se passa em um mundo onde humanos com habilidades mágicas, chamados "caçadores", lutam contra monstros para proteger a humanidade. </p>
+                <div class="estrela"> <img src="/imagens/icons/avaliacao.png" alt=""></div>
+            </div>
+            
             <div class="watch">
                 <div class="play">
-                    <img src="/imagens/icons/botao-play-ponta-de-seta.png" alt="">Play
+                    <img src="/imagens/icons/botao-play-ponta-de-seta.png" loading="lazy" alt="">Play
                 </div>
                 <div class="trailer">
-                    <img src="/imagens/icons/tela-de-tv.png" alt=""> Trailer
+                    <img src="/imagens/icons/tela-de-tv.png" loading="lazy" alt=""> Trailer
                 </div>
-                <img  class="salvar" src="/imagens/icons/salvar-instagram.png" alt="">
+                <img  class="salvar" src="/imagens/icons/salvar-branco.png" loading="lazy" alt="">
             </div>
-            <img  class="crun" src="/imagens/icons/conexao.png" alt="">
-            
-            <div class="carrosel-box">
-                <div class="carousel">
-                    <div class="carousel-item" data-anime="boku">
-                        <img src="/imagens/boku card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="deat">
-                        <img src="/imagens/deat card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="dragon">
-                        <img src="/imagens/dragon card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="hunter">
-                        <img src="/imagens/hunter card.png" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="jujutsu">
-                        <img src="/imagens//jujutsu card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="kimetsu">
-                        <img src="/imagens/kimetsu card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="nanatsu">
-                        <img src="/imagens/nanatsu card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="naruto">
-                        <img src="/imagens/naruto card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="one">
-                        <img src="/imagens/one card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="attack">
-                        <img src="/imagens/shingeki card.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-anime="solo">
-                        <img src="/imagens/Solo levi card.png" alt="">
-                    </div>
+        
+            <div class="carrosel-box" style="position: relative;">
+                <button class="carousel-arrow left">⟨</button>
+              
+                <div class="carousel" id="carousel">
+                  <div class="carousel-item" data-anime="boku">
+                    <img src="/imagens/boku card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Boku no Hero</span>
+                  </div>
+                  <div class="carousel-item" data-anime="death">
+                    <img src="/imagens/deat card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Death Note</span>
+                  </div>
+                  <div class="carousel-item" data-anime="dragon">
+                    <img src="/imagens/dragon card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Dragon Ball Super</span>
+                  </div>
+                  <div class="carousel-item" data-anime="hunter">
+                    <img src="/imagens/hunter card.png" loading="lazy" alt="">
+                    <span class="anime-nome">Hunter x Hunter</span>
+                  </div>
+                  <div class="carousel-item" data-anime="jujutsu">
+                    <img src="/imagens/jujutsu card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Jujutsu no Kaizen</span>
+                  </div>
+                  <div class="carousel-item" data-anime="kimetsu">
+                    <img src="/imagens/kimetsu card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Kimetsu</span>
+                  </div>
+                  <div class="carousel-item" data-anime="nanatsu">
+                    <img src="/imagens/nanatsu card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Nanatsu no Taizai</span>
+                  </div>
+                  <div class="carousel-item" data-anime="naruto">
+                    <img src="/imagens/naruto card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Naruto</span>
+                  </div>
+                  <div class="carousel-item" data-anime="one">
+                    <img src="/imagens/one card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">One Piece</span>
+                  </div>
+                  <div class="carousel-item" data-anime="attack">
+                    <img src="/imagens/shingeki card.jpg" loading="lazy" alt="">
+                    <span class="anime-nome">Attack on Titan</span>
+                  </div>
+                  <div class="carousel-item" data-anime="solo">
+                    <img src="/imagens/Solo levi card.png" loading="lazy" alt="">
+                    <span class="anime-nome">Solo Leveling</span>
+                  </div>
                 </div>
-
-            </div>
+                <button class="carousel-arrow right">⟩</button>
+            </div>       
         </section>
     </main>
-    <script src="/script/script.js" hidden></script>
+    <script src="/script/script.js" hidden></script>   
 </body>
 </html>

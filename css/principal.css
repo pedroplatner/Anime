@@ -26,6 +26,8 @@
 }
 
 .watch{
+    padding-bottom: 50px;
+    width: 700px;
     display: flex;
     align-items: center;
     padding-left: 90px;
@@ -38,13 +40,14 @@
     padding: 10px;
 }
 
+
 .play{
     text-align: center;
     display: flex;
     align-items: center;
     width: 120px;
     border-radius: 10px;
-    background-color: royalblue;
+    background-color: #ff640a;
     font-size: 20px;
 }
 .play img{
@@ -57,7 +60,7 @@
 }
   
 .play:hover, .trailer:hover {
-    background-color: #4169e1cc;
+    background-color: #a13b00;
 }
 
 .trailer{
@@ -66,7 +69,7 @@
     align-items: center;
     width: 120px;
     border-radius: 10px;
-    background-color: royalblue;
+    background-color: #ff640a;
     font-size: 20px;
 }
 
@@ -82,12 +85,23 @@
 
 
 .carrosel-box{
-    margin-left: 20px;
+    width: 100%;
+    padding: 0;           
+    margin: 0 auto;    
+    box-sizing: border-box
 }
 
 .carousel{
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;  
     display: flex;
     gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
 }
 
 .carrosel-box .carousel .carousel-item img{
@@ -96,7 +110,108 @@
     border: 1px solid;
 }
 
-.carousel-item {
+
+.anime-nome{
+    font-size: 1.2rem;
+}
+
+.descricao-box {
+    background: rgba(0, 0, 0, 0.5); /* fundo escuro transparente */
+    backdrop-filter: blur(8px);    /* efeito de vidro fosco */
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 20px 0;
+}
+
+.descricao-box p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 180px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 251px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 1px solid white;
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .anime-nome {
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
     cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
+  }
+
+
+  /*-----------------------------------------------------*/
+
+  .anime-titulo {
+    padding-left: 90px;
+    height: 350px;
+    object-fit: contain;
+    max-width: 80vw;
+    padding-top: 80px ;
+  }
+  
+
+  .anime-titulo[src*="jujutsu"] {
+    height: 200px; /* ou ajuste conforme o necessário */
+  }
+  
+  .anime-titulo[src*="death"] {
+    height: 250px; /* ou ajuste conforme o necessário */
   }
   
