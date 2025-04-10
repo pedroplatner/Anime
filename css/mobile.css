@@ -1,0 +1,97 @@
+.menu-mobile{
+    display: none;
+}
+@media (max-width: 768px) {
+   .name{
+    display: none;
+   }
+
+   body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+   .perfil{
+    display: flex;
+    justify-content: space-between;
+   }
+   .menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 350px;
+  }
+
+  #noti{
+    display: none;
+  }
+  
+
+  .hamburguer {
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu-opcoes {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: #111;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .menu-opcoes li {
+    list-style: none;
+  }
+
+  .menu-opcoes.hidden {
+    display: none;
+  }
+
+  .menu-item {
+    color: white;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .anime-titulo{
+    display: none;
+  }
+
+  .descricao-box{
+    display: none;
+  }
+
+ .trailer{
+    display: none;
+ }
+
+ .play{
+    width: 450px;
+    margin: -80px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+ }
+
+ .salvar {
+   width: 90px;
+   height: 50px;
+   margin-top: 180px;
+   margin-left: 70px;
+   backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ 
+}

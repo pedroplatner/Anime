@@ -8,23 +8,23 @@ const animes = {
         color: "#ffffff"
     },
     "dragon": {
-        bg: "url('/imagens/BG/Dragon ball.png')",
+        bg: "url('/imagens/BG/Dragon ball.jpg')",
         color: "#ffffff"
     },
     "hunter": {
-        bg: "url('/imagens/BG/HUNTER BG.jpg')",
+        bg: "url('/imagens/BG/HUNTER BG.png')",
         color: "#ffffff"
     },
     "jujutsu": {
-        bg: "url('/imagens/BG/Jujutsu BG.jpg')",
+        bg: "url('/imagens/BG/Jujutsu BG.png')",
         color: "#ffffff"
     },
     "kimetsu": {
-        bg: "url('/imagens/BG/Kimetsu Bg.png')",
+        bg: "url('/imagens/BG/Kimetsu Bg.jpg')",
         color: '#ffffff'
     },
     "nanatsu": {
-        bg: "url('/imagens/BG/Nanatsu BG.jpeg')",
+        bg: "url('/imagens/BG/Nanatsu BG.jpg')",
         color: '#ffffff'
     },
     "naruto": {
@@ -129,9 +129,9 @@ const descricoes = {
   
   
 
-// Aplica o estilo do anime inicial (boku)
+// Aplica o estilo do anime inicial
 window.addEventListener('DOMContentLoaded', () => {
-    changeBackground("boku");
+    changeBackground("solo");
   });
 
 // Troca o fundo e cores ao clicar no card
@@ -152,8 +152,6 @@ function changeBackground(animeKey) {
         paragraph.style.color = styles.paragraphColor;
         box.style.backgroundColor = 'rgba(0,0,0,0.5)';
         watch.style.color = styles.paragraphColor;
-        document.querySelector('.play').style.backgroundColor = styles.buttonColor;
-        document.querySelector('.trailer').style.backgroundColor = styles.buttonColor;
     }
     
 
@@ -199,7 +197,7 @@ function scrollPrev() {
 btnRight.addEventListener('click', scrollNext);
 btnLeft.addEventListener('click', scrollPrev);
 
-// Autoplay (4 segundos)
+// Autoplay
 setInterval(() => {
     scrollNext();
 }, 7000);
@@ -240,3 +238,8 @@ salvarIcon.addEventListener('click', () => {
   localStorage.setItem('favoritos', JSON.stringify(favoritos));
   atualizarIconeFavorito(animeAtual);
 });
+
+
+menuToggle.addEventListener('click', () => {
+    menuOpcoes.classList.toggle('hidden');
+  });

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeI</title>
     <link rel="stylesheet" href="css/global.css">
-
+    <link rel="shortcut icon" href="/imagens/icons/favi.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -17,15 +17,23 @@
                     <li><a href="#">Favoritos</a></li>
                 </ul>
             </div>
-
             <div class="perfil">
-                <div class="">
+              <div class="menu-mobile">
+                <button id="menuToggle" class="hamburguer">☰</button>
+                <div id="menuOpcoes" class="menu-opcoes hidden">
+                  <ul>
+                    <li class="menu-item">Favoritos</li>
+                    <li class="menu-item">Lista</li>
+                    <li class="menu-item">Configurações</li>
+                  </ul>
+                </div>
+              </div>
+                <div class="pesquisa">
                     <a href=""><img src="./imagens/icons/lupa.png" alt=""></a>
-                    <a href=""><img src="./imagens/icons/notificacao.png" alt=""></a>
+                    <a href="" id="noti"><img src="./imagens/icons/notificacao.png" alt=""></a>
                 </div>
                 <a href=""><img src="./imagens/icons/perfil-de-usuario.png"  alt=""></a>
             </div>
-            
         </div>
     </header>
 
@@ -52,6 +60,10 @@
                 <button class="carousel-arrow left">⟨</button>
               
                 <div class="carousel" id="carousel">
+                  <div class="carousel-item" data-anime="solo">
+                    <img src="/imagens/Solo levi card.png" loading="lazy" alt="">
+                    <span class="anime-nome">Solo Leveling</span>
+                  </div>
                   <div class="carousel-item" data-anime="boku">
                     <img src="/imagens/boku card.jpg" loading="lazy" alt="">
                     <span class="anime-nome">Boku no Hero</span>
@@ -92,15 +104,13 @@
                     <img src="/imagens/shingeki card.jpg" loading="lazy" alt="">
                     <span class="anime-nome">Attack on Titan</span>
                   </div>
-                  <div class="carousel-item" data-anime="solo">
-                    <img src="/imagens/Solo levi card.png" loading="lazy" alt="">
-                    <span class="anime-nome">Solo Leveling</span>
-                  </div>
                 </div>
                 <button class="carousel-arrow right">⟩</button>
-            </div>       
+            </div>
+
         </section>
     </main>
+
     <script src="/script/script.js" hidden></script>   
 </body>
 </html>

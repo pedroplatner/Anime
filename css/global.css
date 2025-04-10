@@ -1,5 +1,6 @@
 @import url(/css/header.css);
 @import url(/css/principal.css);
+@import url(/css/mobile.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
@@ -24,9 +25,29 @@ header {
 }
 
 body {
-    transition: background-image 1s ease-in-out;
-    background-size: cover;
-    background-position: center;
-  }
-  
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.principal {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
